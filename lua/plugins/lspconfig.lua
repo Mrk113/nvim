@@ -33,7 +33,9 @@ lspconfig.lua_ls.setup {
 local servers = require('configs.ls')
 
 for _, lsp in ipairs(servers) do
-  lspconfig[lsp].setup {
-    capabilities = capabilities,
-  }
+  if lsp ~= "lua_ls" then
+    lspconfig[lsp].setup {
+      capabilities = capabilities,
+    }
+  end
 end

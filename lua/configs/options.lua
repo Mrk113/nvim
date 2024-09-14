@@ -40,3 +40,6 @@ autocmd('TextYankPost', {
         })
     end,
 })
+
+-- Colorscheme
+vim.cmd("colorscheme tokyonight")

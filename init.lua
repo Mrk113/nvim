@@ -1,5 +1,3 @@
-require("configs.options")
-
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
@@ -23,5 +21,4 @@ local plugins = require("plugins")
 
 require("lazy").setup(plugins, require "configs.lazy_config")
 require("configs.mappings")
-
-vim.cmd("colorscheme tokyonight")
+require("configs.options")

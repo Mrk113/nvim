@@ -1,2 +1,2 @@
-return { "clangd", "cssls", "html", "eslint", "pyright" }
+return { "lua_ls", "clangd", "cssls", "html", "eslint", "pyright" }
 
