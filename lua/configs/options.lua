@@ -1,12 +1,12 @@
 local o = vim.o
 local autocmd = vim.api.nvim_create_autocmd
 
-vim.g.mapleader = " "
-
 o.laststatus = 3 -- global statusline
 o.showmode = false
 
 o.clipboard = "unnamedplus"
+
+vim.g.mapleader = " "
 
 -- Indenting
 o.expandtab = true
@@ -21,6 +21,7 @@ o.smartcase = true
 o.mouse = "a"
 
 o.number = true
+o.relativenumber =true
 
 o.signcolumn = "yes"
 o.splitbelow = true
@@ -40,6 +41,3 @@ autocmd('TextYankPost', {
         })
     end,
 })
-
--- Colorscheme
-vim.cmd("colorscheme tokyonight")

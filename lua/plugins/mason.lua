@@ -1,7 +1,21 @@
-require("mason").setup()
+return {
+  {
+    "williamboman/mason.nvim",
+  },
 
-local servers = require("configs.ls")
+  {
+    "williamboman/mason-lspconfig.nvim",
+    config = function()
+      require("mason").setup()
+      require("mason-nvim-dap").setup({
+        handlers = {},
+      })
 
-require("mason-lspconfig").setup({
-    ensure_installed = servers
-})
+      local servers = require("configs.ls")
+
+      require("mason-lspconfig").setup({
+        ensure_installed = servers,
+      })
+    end,
+  },
+}

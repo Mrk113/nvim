@@ -1,7 +1,7 @@
 return {
-    install = { colorscheme = { "tokyonight" } },
+    install = { colorscheme = { "catppuccin" } },
     checker = {
         enabled = true,
-        notify = true,
+        notify = false
     }
 }

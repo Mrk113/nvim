@@ -1,3 +1,5 @@
+require("configs.options")
+
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
@@ -17,8 +19,4 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
-local plugins = require("plugins")
-
-require("lazy").setup(plugins, require "configs.lazy_config")
-require("configs.mappings")
-require("configs.options")
+require("lazy").setup("plugins", require "configs.lazy_config")
