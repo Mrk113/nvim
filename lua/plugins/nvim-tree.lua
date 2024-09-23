@@ -7,8 +7,8 @@ return {
   },
   config = function()
     require("nvim-tree").setup({
-      vim.keymap.set("n", "<D-e>", "<cmd> NvimTreeToggle <CR>"),
-      vim.keymap.set("n", "<D-f>", "<cmd> NvimTreeFocus <CR>"),
+      vim.keymap.set("n", "<C-s>", "<cmd> NvimTreeToggle <CR>"),
+      vim.keymap.set("n", "<C-f>", "<cmd> NvimTreeFocus <CR>"),
 
     })
   end,
